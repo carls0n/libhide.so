@@ -3,7 +3,7 @@ Same concept as libprocesshider, but with the option to hide process by PID or p
 
 <h4>How to use libhide.so</h4>
 Open libhide.c and choose either hide by PID or hide by name and comment out the other option with // at the beginning of the line.
-If you choose hide by PID, simply enter the PID. If you choose hide by process name, simply enter the process name.
+Enter either the PID or process name you wish to hide.
 
 <h4>To compile</h4>
 sudo gcc -fPIC -shared -w libhide.c -o /usr/local/lib/libhide.so
